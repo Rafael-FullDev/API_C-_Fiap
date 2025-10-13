@@ -1,0 +1,15 @@
+C:\Users\USER\source\repos\Infrastructure.Scaffold\bin\Debug\net8.0\Infrastructure.Scaffold.deps.json
+C:\Users\USER\source\repos\Infrastructure.Scaffold\bin\Debug\net8.0\Infrastructure.Scaffold.runtimeconfig.json
+C:\Users\USER\source\repos\Infrastructure.Scaffold\bin\Debug\net8.0\Infrastructure.Scaffold.dll
+C:\Users\USER\source\repos\Infrastructure.Scaffold\bin\Debug\net8.0\Infrastructure.Scaffold.pdb
+C:\Users\USER\source\repos\Infrastructure.Scaffold\obj\Debug\net8.0\Infrastructure.Scaffold.csproj.AssemblyReference.cache
+C:\Users\USER\source\repos\Infrastructure.Scaffold\obj\Debug\net8.0\Infrastructure.Scaffold.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\USER\source\repos\Infrastructure.Scaffold\obj\Debug\net8.0\Infrastructure.Scaffold.AssemblyInfoInputs.cache
+C:\Users\USER\source\repos\Infrastructure.Scaffold\obj\Debug\net8.0\Infrastructure.Scaffold.AssemblyInfo.cs
+C:\Users\USER\source\repos\Infrastructure.Scaffold\obj\Debug\net8.0\Infrastructure.Scaffold.csproj.CoreCompileInputs.cache
+C:\Users\USER\source\repos\Infrastructure.Scaffold\obj\Debug\net8.0\Infrastructure.Scaffold.sourcelink.json
+C:\Users\USER\source\repos\Infrastructure.Scaffold\obj\Debug\net8.0\Infrastructure.Scaffold.dll
+C:\Users\USER\source\repos\Infrastructure.Scaffold\obj\Debug\net8.0\refint\Infrastructure.Scaffold.dll
+C:\Users\USER\source\repos\Infrastructure.Scaffold\obj\Debug\net8.0\Infrastructure.Scaffold.pdb
+C:\Users\USER\source\repos\Infrastructure.Scaffold\obj\Debug\net8.0\Infrastructure.Scaffold.genruntimeconfig.cache
+C:\Users\USER\source\repos\Infrastructure.Scaffold\obj\Debug\net8.0\ref\Infrastructure.Scaffold.dll
