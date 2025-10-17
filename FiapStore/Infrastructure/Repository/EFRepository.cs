@@ -4,31 +4,21 @@ using Microsoft.EntityFrameworkCore;
 
 namespace Infrastructure.Repository
 {
-    public class EFRepository<T> : IRepository<T> where T : EntityBase/* IRepository<T> where T : EntityBase*/
+    public class EFRepository<T> : IRepository<T> where T : EntityBase
     {
-        protected ApplicationDbContext _context;
+        protected ApplicationDBContext _context;
         protected DbSet<T> _dbSet;
 
-        public EFRepository(ApplicationDbContext context)
+        public EFRepository(ApplicationDBContext context)
         {
             _context = context;
             _dbSet = _context.Set<T>();
         }
 
-        public void Alerar(T entidade)
+        public void Alterar(T entidade)
         {
             _dbSet.Update(entidade);
             _context.SaveChanges();
-        }
-
-        public void Alerar(Task entidade)
-        {
-            throw new NotImplementedException();
-        }
-
-        public void Alterar(T entidade)
-        {
-            throw new NotImplementedException();
         }
 
         public void Cadastrar(T entidade)
@@ -38,21 +28,17 @@ namespace Infrastructure.Repository
             _context.SaveChanges();
         }
 
-        public void Deletar(int id)
+        public void Deletar(int Id)
         {
-            _dbSet.Remove(ObterPorId(id));
+            _dbSet.Remove(ObterPorId(Id));
             _context.SaveChanges();
         }
 
         public IList<T> Lista()
-        {
-            throw new NotImplementedException();
-        }
-
-        public T ObterPorId(int id)
-            => _dbSet.FirstOrDefault(entity => entity.Id == id);
-
-        public IList<T> ObterTodos()
             => _dbSet.ToList();
+
+
+        public T ObterPorId(int Id)
+        => _dbSet.FirstOrDefault(entity => entity.Id == Id);
     }
 }
