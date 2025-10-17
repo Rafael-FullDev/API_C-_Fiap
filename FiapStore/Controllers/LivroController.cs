@@ -16,12 +16,12 @@ namespace FiapStoreApi.Controllers
             _livroRepository = livroRepository;
         }
 
-/*        [HttpGet]
+        [HttpGet]
         public IActionResult Get()
         {
             try
             {
-                return Ok(_livroRepository.ObterTodos());
+                return Ok(_livroRepository.Lista());
             }
             catch (Exception e)
             {
@@ -41,7 +41,7 @@ namespace FiapStoreApi.Controllers
                 return BadRequest(e);
             }
         }
-*/
+
         [HttpPost]
         public IActionResult Post([FromBody] LivroInput input)
         {
@@ -60,44 +60,44 @@ namespace FiapStoreApi.Controllers
                 return BadRequest(e);
             }
         }
-        /*
-                [HttpPut]
-                public IActionResult Put([FromBody] LivroUpdateInput input)
-                {
-                    try
-                    {
-                        var livro = _livroRepository.ObterPorId(input.Id);
-                        livro.Nome = input.Nome;
-                        livro.Editora = input.Editora;
-                        _livroRepository.Alerar(livro);
-                        return Ok();
-                    }
-                    catch (Exception e)
-                    {
-                        return BadRequest(e);
-                    }
-                }
 
-                [HttpDelete("{id:int}")]
-                public IActionResult Delete([FromRoute] int id)
-                {
-                    try
-                    {
-                        _livroRepository.Deletar(id);
-                        return Ok();
-                    }
-                    catch (Exception e)
-                    {
-                        return BadRequest(e);
-                    }
-                }
+       /* [HttpPut]
+        public IActionResult Put([FromBody] LivroUpdateInput input)
+        {
+            try
+            {
+                var livro = _livroRepository.ObterPorId(input.Id);
+                livro.Nome = input.Nome;
+                livro.Editora = input.Editora;
+                _livroRepository.Alerar(livro);
+                return Ok();
+            }
+            catch (Exception e)
+            {
+                return BadRequest(e);
+            }
+        }*/
 
-                [HttpPost("Cadastro-em-massa")]
-                public IActionResult CadastrarEmMassa()
-                {
-                    try
-                    {
-                        var livros = new List<Livro>()
+        [HttpDelete("{id:int}")]
+        public IActionResult Delete([FromRoute] int id)
+        {
+            try
+            {
+                _livroRepository.Deletar(id);
+                return Ok();
+            }
+            catch (Exception e)
+            {
+                return BadRequest(e);
+            }
+        }
+/*
+        [HttpPost("Cadastro-em-massa")]
+        public IActionResult CadastrarEmMassa()
+        {
+            try
+            {
+                var livros = new List<Livro>()
                         {
                             new Livro() { Nome = "Livro 1", Editora = "Editora", DataCriacao = DateTime.Now},
                             new Livro() { Nome = "Livro 2", Editora = "Editora", DataCriacao = DateTime.Now},
@@ -111,13 +111,13 @@ namespace FiapStoreApi.Controllers
                             new Livro() { Nome = "Livro 10", Editora = "Editora", DataCriacao = DateTime.Now}
                         };
 
-                        _livroRepository.CadastrarEmMassa(livros);
-                        return Ok();
-                    }
-                    catch (Exception e)
-                    {
-                        return BadRequest(e);
-                    }
-                }*/
+                _livroRepository.CadastrarEmMassa(livros);
+                return Ok();
+            }
+            catch (Exception e)
+            {
+                return BadRequest(e);
+            }
+        }*/
     }
 }
